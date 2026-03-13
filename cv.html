@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículum y certificados de Alex" />
+  <title>Alex | Currículum y certificados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cv.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__row">
+      <div>
+        <p class="kicker">Currículum</p>
+        <h1>Alex</h1>
+        <p class="sub">CV y respaldo (certificados y documentos).</p>
+      </div>
+      <div class="top__actions">
+        <a class="btn" href="index.html">Volver al portafolio</a>
+        <button class="btn btn--ghost" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="cv">
+      <div class="card__head">
+        <h2 id="cv">Currículum</h2>
+        <a class="link" href="Curriculum_AZV.png" target="_blank" rel="noopener">Abrir imagen</a>
+      </div>
+      <img class="doc-img" src="Curriculum_AZV.png" alt="Currículum de Alex" loading="eager" />
+    </section>
+
+    <section class="card" aria-labelledby="certificados">
+      <div class="card__head">
+        <h2 id="certificados">Certificados y documentos</h2>
+        <p class="muted">Incluye experiencia, formación y respaldo adicional.</p>
+      </div>
+
+      <div class="grid">
+        <figure class="doc">
+          <img src="Titulo_Bachiller.jpeg" alt="Título de Bachiller" loading="lazy" />
+          <figcaption>Título de Bachiller</figcaption>
+        </figure>
+        <figure class="doc">
+          <img src="Ceriticado_Trabajo_Hansa.jpeg" alt="Certificado de trabajo - Hansa" loading="lazy" />
+          <figcaption>Certificado de trabajo: Hansa</figcaption>
+        </figure>
+        <figure class="doc">
+          <img src="Ceriticado_Trabajo_Alcaldia.jpeg" alt="Certificado de trabajo - Alcaldía" loading="lazy" />
+          <figcaption>Certificado de trabajo: Alcaldía</figcaption>
+        </figure>
+        <figure class="doc">
+          <img src="Ceriticado_Word_Excel.jpeg" alt="Certificado de Word y Excel" loading="lazy" />
+          <figcaption>Certificado: Word y Excel</figcaption>
+        </figure>
+        <figure class="doc">
+          <img src="Ceriticado_Access.jpeg" alt="Certificado de Access" loading="lazy" />
+          <figcaption>Certificado: Access</figcaption>
+        </figure>
+        <figure class="doc">
+          <img src="Certificado_Bombero.jpeg" alt="Certificado de Bombero" loading="lazy" />
+          <figcaption>Certificado: Bombero</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted">Tip: para enviar por correo, usa “Imprimir / Guardar PDF” y guarda como PDF.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,385 @@
+﻿:root {
+  --bg: #0e1116;
+  --surface: #151b22;
+  --surface-2: #1c242e;
+  --text: #f1f5fb;
+  --muted: #a7b3c4;
+  --accent: #ff7a18;
+  --accent-2: #3bd1b2;
+  --line: rgba(255, 255, 255, 0.14);
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+  background: radial-gradient(1200px 700px at 8% 10%, #1e2937 0%, transparent 60%),
+              radial-gradient(900px 600px at 90% 90%, #17232e 0%, transparent 62%),
+              var(--bg);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.15;
+  font-family: "Sora", sans-serif;
+}
+
+p {
+  color: var(--muted);
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(1140px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 0);
+  background-size: 4px 4px;
+  opacity: 0.24;
+  z-index: -2;
+}
+
+.orb {
+  position: fixed;
+  width: 340px;
+  height: 340px;
+  border-radius: 999px;
+  filter: blur(50px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.orb--a {
+  background: #3bd1b2;
+  top: -120px;
+  right: -60px;
+}
+
+.orb--b {
+  background: #ff7a18;
+  bottom: -140px;
+  left: -100px;
+}
+
+.hero {
+  padding-bottom: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.1rem;
+}
+
+.brand {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.nav__links a:hover {
+  color: var(--text);
+}
+
+.hero__layout {
+  padding: 5rem 0 3rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  max-width: 16ch;
+}
+
+.lead {
+  max-width: 62ch;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(120deg, #ff7a18 0%, #ff9648 100%);
+  color: #121417;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(255, 122, 24, 0.35);
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.btn--ghost:hover {
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.highlight-card,
+.panel,
+.project-card,
+.contact-box,
+.stats article {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.highlight-card {
+  padding: 1.1rem;
+}
+
+.highlight-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.section {
+  padding: 3.2rem 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.stats article {
+  padding: 1rem;
+}
+
+.stats h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.8rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.panel {
+  padding: 1.2rem;
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.chips {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chips span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: #d9e4f2;
+  font-size: 0.9rem;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.projects {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+  padding: 1.1rem;
+}
+
+.project-card__label {
+  margin: 0;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.project-card h3 {
+  margin: 0.35rem 0 0.6rem;
+}
+
+.project-card__tags {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin: 0.7rem 0;
+}
+
+.project-card__tags span {
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 0.22rem 0.55rem;
+  background: rgba(59, 209, 178, 0.12);
+  border: 1px solid rgba(59, 209, 178, 0.32);
+}
+
+.project-card__actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.project-card__actions a {
+  color: #f0f7ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card__actions a:hover {
+  color: var(--accent-2);
+}
+
+.contact-box {
+  padding: 1.3rem;
+  text-align: center;
+}
+
+.contact-links {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-link {
+  min-width: 142px;
+  gap: 0.5rem;
+}
+
+.contact-link__icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+}
+
+.contact-link__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.contact-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.93rem;
+  color: #c5d1df;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem 1rem 2.7rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 930px) {
+  .hero__layout,
+  .split,
+  .projects,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .contact-link {
+    min-width: 0;
+  }
+}

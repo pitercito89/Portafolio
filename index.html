@@ -1,0 +1,220 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de estudiante de Ingeniería de Sistemas en último semestre" />
+  <title>Alex | Portafolio de Ingeniería de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb--a"></div>
+  <div class="orb orb--b"></div>
+
+  <header class="hero reveal" id="inicio">
+    <nav class="nav container">
+      <a href="#inicio" class="brand">Alex.dev</a>
+      <div class="nav__links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="container hero__layout">
+      <div>
+        <p class="tag">Ingeniería de Sistemas | Último semestre | Universidad Privada Domingo Savio</p>
+        <h1>Desarrollo software que convierte problemas reales en productos útiles.</h1>
+        <p class="lead">
+          Perfil técnico orientado a resultados: desarrollo web, bases de datos y automatización.
+          Busco un rol junior donde pueda aportar con ejecución rápida, buenas prácticas y mentalidad de mejora continua.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#proyectos">Ver portafolio</a>
+          <a class="btn btn--ghost" href="cv.html" target="_blank" rel="noopener">Ver CV</a>
+        </div>
+      </div>
+
+      <aside class="highlight-card">
+        <h2>Propuesta de valor</h2>
+        <ul>
+          <li>Entrego soluciones funcionales de punta a punta.</li>
+          <li>Transformo requisitos en funcionalidades medibles.</li>
+          <li>Trabajo con enfoque en calidad, claridad y velocidad.</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal" id="metricas">
+      <div class="container stats">
+        <article>
+          <h3>2+</h3>
+          <p>Proyectos funcionales desarrollados</p>
+        </article>
+        <article>
+          <h3>100%</h3>
+          <p>Compromiso con entregables y aprendizaje continuo</p>
+        </article>
+        <article>
+          <h3>1</h3>
+          <p>Objetivo: primera oportunidad profesional tech</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="sobre-mi">
+      <div class="container split">
+        <article class="panel">
+          <h2>Perfil profesional</h2>
+          <p>
+            Estudiante de Ingeniería de Sistemas (Universidad Privada Domingo Savio), próximo a graduarse con bases sólidas en programación, estructuras de datos,
+            modelado relacional y construcción de interfaces web. Me adapto rápido y priorizo soluciones que aporten valor al negocio.
+          </p>
+        </article>
+        <article class="panel">
+          <h2>Fortalezas clave</h2>
+          <ul>
+            <li>Desarrollo frontend/backend con enfoque práctico.</li>
+            <li>Consultas SQL y diseño de base de datos.</li>
+            <li>Control de versiones con Git/GitHub.</li>
+            <li>Comunicación técnica clara con equipos mixtos.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="stack">
+      <div class="container">
+        <h2>Stack tecnológico</h2>
+        <div class="chips">
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Java</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>SQL</span>
+          <span>Git</span>
+          <span>Node.js</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="proyectos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Proyectos destacados</h2>
+          <p>Dos proyectos reales con repositorio y acceso a demo.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project-card">
+            <p class="project-card__label">Programa 01</p>
+            <h3>Educando | Sistema de gestión escolar</h3>
+            <p>
+              Sistema web para operación real de colegio: roles estrictos (admin, director, docente, estudiante y padre/madre),
+              evaluación por instrumentos, consolidación trimestral, asistencia, reportes CSV/PDF y notificaciones por Telegram con trazabilidad.
+            </p>
+            <p>
+              Diseñado con Next.js 16, React 19, TypeScript, Tailwind y Supabase; despliegue en Render.
+            </p>
+            <p>
+              Demo: usuario <strong>admin</strong> y contraseña <strong>Admin123*</strong>.
+            </p>
+            <div class="project-card__tags">
+              <span>Next.js 16</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+              <span>Telegram Bot API</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/pitercito89/Educando.1" target="_blank" rel="noopener">Repositorio</a>
+              <a href="https://educando-1.vercel.app/" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <p class="project-card__label">Programa 02</p>
+            <h3>Sistema de ventas e inventario (escritorio ejecutable)</h3>
+            <p>
+              Aplicación de escritorio construida con arquitectura por capas: interfaz en PySide6,
+              lógica de negocio y persistencia en SQLite. La base se auto-crea y auto-migra para mantener compatibilidad entre versiones.
+            </p>
+            <p>
+              Punto crítico implementado: venta nueva con validación de stock, transacción segura en ventas y detalle,
+              descuento de inventario, historial editable, anulación con devolución de stock y recibo PDF con reportlab.
+            </p>
+            <p>
+              Incluye importación/exportación de Excel para operación diaria real. Tipo de entrega: ejecutable local (no demo web).
+            </p>
+            <div class="project-card__tags">
+              <span>Python</span>
+              <span>PySide6</span>
+              <span>SQLite</span>
+              <span>ReportLab</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/pitercito89/Sitema_GuPa" target="_blank" rel="noopener">Repositorio</a>
+              <a href="mailto:alex.azv1989@gmail.com">Solicitar demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contacto">
+      <div class="container contact-box">
+        <h2>Disponible para entrevista y pruebas técnicas</h2>
+        <p>
+          Si tu equipo necesita un perfil junior con ejecución y criterio técnico, podemos hablar.
+        </p>
+        <div class="hero__actions contact-links">
+          <a class="btn contact-link" href="mailto:alex.azv1989@gmail.com" aria-label="Enviar correo a Alex">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v.9l-9 5.4-9-5.4V5Zm0 3.2V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.2l-8.49 5.1a1 1 0 0 1-1.02 0L3 8.2Z"></path>
+              </svg>
+            </span>
+            <span>Correo</span>
+          </a>
+          <a class="btn btn--ghost contact-link" href="https://wa.me/59163461474" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2.01A9.86 9.86 0 0 0 2.2 11.86c0 1.74.45 3.45 1.3 4.95L2 22l5.34-1.4a9.85 9.85 0 0 0 4.7 1.2h.01a9.86 9.86 0 0 0 0-19.79Zm5.74 13.95c-.24.67-1.39 1.27-1.92 1.35-.5.07-1.14.1-1.84-.13-.43-.14-.98-.33-1.69-.64-2.97-1.28-4.9-4.28-5.05-4.48-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.02-2.46.27-.3.58-.37.78-.37h.56c.17 0 .4-.07.62.46.24.58.82 2.02.89 2.17.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.37-.44.5-.15.15-.31.31-.13.61.18.3.8 1.32 1.72 2.14 1.18 1.04 2.17 1.36 2.48 1.51.31.15.48.13.65-.08.18-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.71.8 2 0.94.3.15.5.22.57.35.07.13.07.76-.17 1.42Z"></path>
+              </svg>
+            </span>
+            <span>WhatsApp</span>
+          </a>
+          <a class="btn btn--ghost contact-link" href="https://linkedin.com/in/alexander-zabala-vargas-859037278" target="_blank" rel="noopener" aria-label="Abrir perfil de LinkedIn">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5.34 3.5a1.84 1.84 0 1 0 0 3.68 1.84 1.84 0 0 0 0-3.68ZM3.7 8.8h3.28V20H3.7V8.8Zm5.36 0h3.14v1.53h.05c.44-.82 1.51-1.69 3.1-1.69 3.31 0 3.92 2.18 3.92 5.01V20h-3.27v-5.62c0-1.34-.03-3.07-1.87-3.07-1.88 0-2.17 1.47-2.17 2.98V20H9.06V8.8Z"></path>
+              </svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="btn btn--ghost contact-link" href="https://github.com/pitercito89/" target="_blank" rel="noopener" aria-label="Abrir perfil de GitHub">
+            <span class="contact-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 .5C5.65.5.5 5.77.5 12.27c0 5.2 3.3 9.62 7.88 11.18.58.11.79-.26.79-.57 0-.28-.01-1.03-.01-2.03-3.21.72-3.89-1.58-3.89-1.58-.52-1.37-1.28-1.73-1.28-1.73-1.04-.73.08-.71.08-.71 1.15.08 1.76 1.22 1.76 1.22 1.02 1.81 2.68 1.29 3.33.99.1-.76.4-1.29.73-1.59-2.56-.3-5.25-1.31-5.25-5.83 0-1.29.45-2.34 1.19-3.17-.12-.3-.52-1.5.11-3.13 0 0 .97-.32 3.19 1.21a10.8 10.8 0 0 1 5.8 0c2.21-1.53 3.18-1.2 3.18-1.2.64 1.62.24 2.82.12 3.12.74.83 1.19 1.89 1.19 3.17 0 4.53-2.7 5.52-5.28 5.82.41.36.79 1.08.79 2.18 0 1.57-.01 2.83-.01 3.22 0 .31.2.69.8.57 4.58-1.56 7.87-5.98 7.87-11.18C23.5 5.77 18.35.5 12 .5Z"></path>
+              </svg>
+            </span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alex - Portafolio de Ingeniería de Sistemas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
