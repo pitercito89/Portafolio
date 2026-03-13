@@ -95,9 +95,43 @@ a {
 
 .brand {
   font-family: "Sora", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.7rem 0.44rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+  position: relative;
+  isolation: isolate;
+}
+
+.brand::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(120px 60px at 15% 30%, rgba(59, 209, 178, 0.42), transparent 60%),
+              radial-gradient(140px 70px at 85% 75%, rgba(255, 122, 24, 0.36), transparent 62%);
+  opacity: 0.55;
+  z-index: -1;
+}
+
+.brand {
+  background-image: linear-gradient(120deg, #ffffff 0%, #d6e9ff 40%, #fff0e4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand:hover {
+  transform: translateY(-1px);
+  transition: transform 200ms ease;
 }
 
 .nav__links {
